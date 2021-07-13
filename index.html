@@ -4,20 +4,86 @@
 		<meta charset="UTF-8">
 		<title>Kameli(ei se nobo)</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 	</head>
-	<body class="main">
-		<div class="topnav" id="menuBar">
-			<a href="index.html" class="active">Etusivu</a>
-			<a href="sekoilut.html">Sekoilut</a>
-			<a href="gallery.html">Galleria</a>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		  <div class="container-fluid">
+		<a class="navbar-brand" href="#">Luukas Pörtfors</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+
+		    <div class="collapse navbar-collapse" id="navbarColor01">
+		      <ul class="navbar-nav me-auto">
+			<li class="nav-item">
+			  <a class="nav-link active" href="index">Etusivu
+			    <span class="visually-hidden">(current)</span>
+			  </a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="sekoilut">Sekoilut</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="gallery">Galleria</a>
+			</li>
+		      </ul>
+		      <form class="d-flex">
+			<input class="form-control me-sm-2" type="text" placeholder="Search">
+			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container pt-4">
+			<h1>
+			Welcome to the website of Luukas Pörtfors
+			</h1>
+			<hr>
+			<div class="row">
+					<div class="col-xs-6 col-sm-4 col-md-4 mb-4 mt-3">
+							<div class="card h-100 w-100 border-secondary mb-3" style="max-width: 20rem;">
+							<div class="card-header">Article</div>
+
+							<a href="articles/about-me.html">
+								<div class="card-body">
+									<h4 class="card-title">Name: "About Me!"</h4>
+
+									<p class="card-text">A description of my life</p>
+								<p class="card-text">By Luukas Pörtfors</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-4 mb-4 mt-3">
+							<div class="card h-100 w-100 border-secondary mb-3" style="max-width: 20rem;">
+							<div class="card-header">Article</div>
+
+							<a href="articles/linux-config.html">
+								<div class="card-body">
+									<h4 class="card-title">Name: My GNU/Linux configuration</h4>
+
+									<p class="card-text">A look into my GNU/Linux configuration</p>
+								<p class="card-text">By Luukas Pörtfors</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-4 mb-4 mt-3">
+							<div class="card h-100 w-100 border-secondary mb-3" style="max-width: 20rem;">
+							<div class="card-header">Article</div>
+
+						<a href="articles/x200.html">
+								<div class="card-body">
+									<h4 class="card-title">My thinkpad x200</h4>
+
+								<p class="card-text">A look into my old thinkpad setup + Exclusive content from Luukas Pörtfors</p>
+								<p class="card-text">By Luukas Pörtfors</p>
+								</div>
+							</div>
+						</a>
+					</div>
+			</div>
 		</div>
-		<h1 style="text-align:center;">Welcome!</h1>
-		<p>To the personal website of Luukas Pörtfors!</p>
-		<p>Please consider the following articles:</p>
-		<ul style="margin: 0 auto;padding:0;">
-			<li><a href="articles/about-me">About Me</a></li>
-			<li><a href="articles/linux-config">My GNU/Linux Configuration</a></li>
-			<li><a href="articles/x200">My ThinkPad X200</a></li>
-		</ul>
 	</body>
 </html>

@@ -4,14 +4,38 @@
 		<meta charset="UTF-8">
 		<title>About me</title>
 		<link rel="stylesheet" type="text/css" href="/styles.css">
+		<link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
 	</head>
-	<body class="main">
-		<div class="topnav" id="menuBar">
-			<a href="/index.html" class="active">Etusivu</a>
-			<a href="/sekoilut.html">Sekoilut</a>
-			<a href="/gallery.html">Galleria</a>
-		</div>
-		<div class="article">
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		  <div class="container-fluid">
+		<a class="navbar-brand" href="#">Luukas Pörtfors</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+
+		    <div class="collapse navbar-collapse" id="navbarColor01">
+		      <ul class="navbar-nav me-auto">
+			<li class="nav-item">
+			  <a class="nav-link active" href="/index">Etusivu
+			    <span class="visually-hidden">(current)</span>
+			  </a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="/sekoilut">Sekoilut</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="/gallery">Galleria</a>
+			</li>
+		      </ul>
+		      <form class="d-flex">
+			<input class="form-control me-sm-2" type="text" placeholder="Search">
+			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container">
 			<h1>About Me</h1>
 			<p>I'm a young GNU/Linux-enthusiast from Finland who spends most of their time
 			doing all kinds of cool stuff with computers.</p>
@@ -22,7 +46,7 @@
 			<h3>Programming</h3>
 			<p>I spend a big part of my time programming. I mainly use C as my programming language, but I'm capable of programming in other languages as well.</p>
 			<p>My most recent major programming project has been the developement of a text editor called <a href="https://github.com/dumrich/Ant">Ant</a> where the
-			frontend is developed in rust and the editor-backend is developed by me in C.</p>
+			frontend is developed in rust and the editor-backend is developed by me in C. I soon plan to work on a project called Zap, where I help build essential system software from scratch.</p>
 			<h3>Contacts</h3>
 			<p>To get in touch with me, email me any time at <a href="mailto:lajp@lajp.fi">lajp@lajp.fi</a>. I do not use any kinds of social media on a daily basis
 			which means that email is the best and most reliable way to reach me. I usually check my mail atleast once or twice a day.</p>

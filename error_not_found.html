@@ -4,17 +4,43 @@
 		<meta charset="UTF-8">
 		<title>Error 404: Not Found</title>
 		<link rel="stylesheet" type="text/css" href="/styles.css">
+		<link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
 	</head>
-	<body class="main">
-		<div class="topnav" id="menuBar">
-			<a href="/" class="active">Etusivu</a>
-			<a href="/sekoilut">Sekoilut</a>
-			<a href="/gallery">Galleria</a>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		  <div class="container-fluid">
+		<a class="navbar-brand" href="#">Luukas Pörtfors</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+
+		    <div class="collapse navbar-collapse" id="navbarColor01">
+		      <ul class="navbar-nav me-auto">
+			<li class="nav-item">
+			  <a class="nav-link" href="index">Etusivu
+			    <span class="visually-hidden">(current)</span>
+			  </a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="/sekoilut">Sekoilut</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="/gallery">Galleria</a>
+			</li>
+		      </ul>
+		      <form class="d-flex">
+			<input class="form-control me-sm-2" type="text" placeholder="Search">
+			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container">
+				<h1>You did it!</h1>
+			<p>Congratulations visitor! You've found it! THE UNKNOWN.</p>
+			<p>And incase you didn't mean to find it, don't worry. Just head back to the previous page
+			or to the home page.</p>
+			<img src="/media/sitting_camels.jpg" alt="A group of camels sitting in the desert">
 		</div>
-		<h1>You did it!</h1>
-		<p>Congratulations visitor! You've found it! THE UNKNOWN.</p>
-		<p>And incase you didn't mean to find it, don't worry. Just head back to the previous page
-		or to the home page.</p>
-		<img src="/media/sitting_camels.jpg" alt="A group of camels sitting in the desert">
 	</body>
 </html>
