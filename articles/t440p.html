@@ -109,6 +109,13 @@
 			<p>Other than using Gentoo my setup doesn't really differ from my other setups that much as I've really perfected my workflow over the years and
 			I'm not planning to change it anytime soon. If you're interested about my general GNU/Linux setup, go check out <a href="/linux-config">this article</a>
 			(when I'm finished writing it).
+			<p>Some T440p-specific configurations on my setup do exist however. The most notable one being the undervolt-configuration.
+			I'm using the <a href="https://github.com/georgewhewell/undervolt">undervolt</a> python module to undervolt the i7 on the ThinkPad.
+			This helps in achieving better thermals while having no negative effect on performace whatsoever. In my case the
+			CPU seems to become unstable when going past -50mV so I'm keeping my voltages at that. Undervolting in general is a very easy "mod" to make
+			and it usually provides some benefits in performance and battery life. Post-Haswell intel chipsets are generally known to provide the CPU with
+			more power than it acually needs for stable operation and undervolting is a great way to quickly improve performance on almost every modern intel-based
+			laptop.</p>
 			<p>Another interesting thing about my T440p is that I recently corebooted it. I'll cover the corebooting in somewhat greater detail in the next section</p>
 			<h3>Coreboot (and stuff that it breaks)</h3>
 			<p>I corebooted my T400p July 17th 2021. It was one warm summer day that I spent around the kitchen table together with 4 laptops, a Raspberry Pi 4, a bunch
