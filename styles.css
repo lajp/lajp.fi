@@ -9,6 +9,17 @@
 	max-width: 25%;
 	padding: 0 4px;
 }
+.article {
+    background-color:#805500;
+    font-size: 1vw;
+    text-align: left;
+    flex-flow: row wrap;
+    inline-size: 50%;
+    overflow: wrap;
+    float: left;
+    position: relative;
+    left: 25%;
+}
 .column img {
 	margin-top: 8px;
 	vertical-align: middle;
