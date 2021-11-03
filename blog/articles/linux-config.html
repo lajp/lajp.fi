@@ -44,71 +44,87 @@
 			<h3>The programs in my GNU/Linux installation</h3>
 			<p>My configurations for most of these following programs can be found in my
 			<a href="https://github.com/lajp/dotfiles">dotfiles-repo</a></p>
-			<ul>
-				<li>
-					<b><a href="https://dwm.suckless.org">DWM</a></b>: My primary Window Manager. I've been a DWM user since the summer
-					of 2020. I'm not into ricing so much so some might find my setup to be "ugly" but I think it's just perfect.
-					More information and my DWM config can be found in <a href="https://github.com/lajp/dwm">this git repo</a>.
-					My DMW repo also includes my <b>slstatus</b> config.
-				</li>
-				<li>
-					<b>VIM</b>(<a href="https://github.com/neovim/neovim">NeoVim</a>): I'm a vim user and always will be. There are
-					so many things in my setup that are affected by this since I always want to have the vim keybindings on everything.
-					My vim configuration can be found <a href="https://github.com/lajp/dotfiles/tree/master/.vim">here</a>
-					in my dotfiles repo.
-				</li>
-				<li>
-					<a href="https://neomutt.org/">(Neo)<b>Mutt</b></a>: I use Mutt as my email client. I use it for all mail
-					and I never want to touch a network client again.
-					I have configured Mutt using Luke Smith's <a href="https://github.com/LukeSmithxyz/mutt-wizard">MuttWizard script</a>.
-					I could've done it myself but this just saves a lot of time and effort.
-				</li>
-				<li>
-					<a href="https://htop.dev/"><b>Htop</b></a>: Htop is a powerful "Task Manager"-like tool for *nix machines.
-					The use case for Htop in my configuration is really just for discovering what programs are using up RAM and CPU and how much.
-					I do all my signaling and killing either with
-					<code>killall</code>, <code>pkill</code> or <code>kill</code>. I use <a href="https://github.com/KoffeinFlummi/htop-vim">
-						a fork of Htop that has vim-keybindings</a> by github user <a href="https://github.com/KoffeinFlummi">KoffeinFlummi</a>.
-					I would've patched Htop myself but this fork was conveniently already available and saved me some effort.
-				</li>
-				<li>
-					<a href="https://transmissionbt.com/"><b>Transmission</b></a>: I use transmission for all my
-					<span title="Seeding Linux ISOs"><em>bittorrenting needs</em></span>. I've grown very fond of the transmission way of doing things.
-					I have it setup so that I have <code>transmission-daemon</code> running in the background and I send commands to it
-					using the very powerful <code>tranmission-remote</code> utility. I also have <code>alias t=transmission-remote</code> in my zshrc.
-					I'm using <a href="https://github.com/lajp/transmission-remote-rename">my own patched version of transmission</a>
-					which includes a feature in <code>transmission-remote</code> that is not included in the origin/master.
-					<span title="I do plan on cleaning it at some point"><em>My code is very bad</em></span> and that's why I'm yet to send a PR to the transmission project
-					(+ the project is pretty much dead atm). The feature that my patch adds is discussed in
-					<a href="https://github.com/transmission/transmission/issues/104">this github issue</a>.
-				</li>
-				<li>
-					<a href="https://www.zsh.org/">Zsh</a>: Zsh is my primary shell. I've been planning on switching to something else like
-					<a href="https://fishshell.com/">fish</a> but I'm currently strongly attached to <a href="https://github.com/zdharma/fast-syntax-highlighting">
-						this zsh-plugin</a>. I'm still not crazy enough to have zsh as my <code>/bin/sh</code> that I have symlinked to <code>/bin/dash</code>.
-					My zshrc can also be found in my <a href="https://github.com/lajp/dotfiles">dotfiles-repo</a> but I wouldn't consider it
-					a very interesting read.
-				</li>
-				<li>
-					<a href="https://ffmpeg.org/"><b>FFmpeg</b></a>: FFmpeg must be one of my most dearly beloved software projects.
-					I use it for everything from recording screencasts and video editing to converting stuff to
-					<span title="High Efficiency Video Codec">HEVC</span>. I feel like many people don't realize the sheer power of FFmpeg
-					But if you haven't tried it out I highly recommend.
-				</li>
-				<li>
-					<a href="https://mpv.io"><b>MPV</b></a>: MPV funtions as my media player. MPV is a really good for everything as it
-					is able to read almost every protocol from <code>ytdl://</code> to <code>sftp://</code>. The MPV also provides
-					with powerful controlls and configuration options and reacts to scaling very well which means it work great with
-					tiling window managers like DWM.
-				</li>
-				<li>
-					<a href="https://newsboat.org/"><b>Newsboat</b></a>: Newsboat functions as my rss-reader. I'm also subscribed to
-					some youtube-channels and their feeds are also included in my Newsboat. I have a scripts in my
-					<a href="https://github.com/lajp/dotfiles">dotfiles-repo</a> called <code>newsboat-open.sh</code> that essentially
-					just opens all the youtube-links in mpv and other stuff in the browser (as it is quite uncommon for websites
-					to include the entire article in the rss-feed).
-				</li>
-			</ul>
+
+            <h4><a href="https://dwm.suckless.org">DWM</a></h4>
+            <p>
+            My primary Window Manager. I've been a DWM user since the summer
+            of 2020. I'm not into ricing so much so some might find my setup to be "ugly" but I think it's just perfect.
+            More information and my DWM config can be found in <a href="https://github.com/lajp/dwm">this git repo</a>.
+            My DMW repo also includes my <b>slstatus</b> config.
+            </p>
+
+            <h4>VIM(<a href="https://github.com/neovim/neovim">NeoVim</a>)</h4>
+            <p>
+            I'm a vim user and always will be. There are
+            so many things in my setup that are affected by this since I always want to have the vim keybindings on everything.
+            My vim configuration can be found <a href="https://github.com/lajp/dotfiles/tree/master/.vim">here</a>
+            in my dotfiles repo.
+            </p>
+
+            <h4><a href="https://neomutt.org/">(Neo)<b>Mutt</b></a></h4>
+            <p>
+            I use Mutt as my email client. I use it for all mail
+            and I never want to touch a network client again.
+            I have configured Mutt using Luke Smith's <a href="https://github.com/LukeSmithxyz/mutt-wizard">MuttWizard script</a>.
+            I could've done it myself but this just saves a lot of time and effort.
+            </p>
+
+            <h4><a href="https://htop.dev/"><b>Htop</b></a></h4>
+            <p>
+            Htop is a powerful "Task Manager"-like tool for *nix machines.
+            The use case for Htop in my configuration is really just for discovering what programs are using up RAM and CPU and how much.
+            I do all my signaling and killing either with
+            <code>killall</code>, <code>pkill</code> or <code>kill</code>. I use <a href="https://github.com/KoffeinFlummi/htop-vim">
+                a fork of Htop that has vim-keybindings</a> by github user <a href="https://github.com/KoffeinFlummi">KoffeinFlummi</a>.
+            I would've patched Htop myself but this fork was conveniently already available and saved me some effort.
+            </p>
+
+            <h4><a href="https://transmissionbt.com/"><b>Transmission</b></a></h4>
+            <p>
+            I use transmission for all my
+            <span title="Seeding Linux ISOs"><em>bittorrenting needs</em></span>. I've grown very fond of the transmission way of doing things.
+            I have it setup so that I have <code>transmission-daemon</code> running in the background and I send commands to it
+            using the very powerful <code>tranmission-remote</code> utility. I also have <code>alias t=transmission-remote</code> in my zshrc.
+            I'm using <a href="https://github.com/lajp/transmission-remote-rename">my own patched version of transmission</a>
+            which includes a feature in <code>transmission-remote</code> that is not included in the origin/master.
+            <span title="I do plan on cleaning it at some point"><em>My code is very bad</em></span> and that's why I'm yet to send a PR to the transmission project
+            (+ the project is pretty much dead atm). The feature that my patch adds is discussed in
+            <a href="https://github.com/transmission/transmission/issues/104">this github issue</a>.
+            </p>
+
+            <h4><a href="https://www.zsh.org/">Zsh</a></h4>
+            <p>
+            Zsh is my primary shell. I've been planning on switching to something else like
+            <a href="https://fishshell.com/">fish</a> but I'm currently strongly attached to <a href="https://github.com/zdharma/fast-syntax-highlighting">
+                this zsh-plugin</a>. I'm still not crazy enough to have zsh as my <code>/bin/sh</code> that I have symlinked to <code>/bin/dash</code>.
+            My zshrc can also be found in my <a href="https://github.com/lajp/dotfiles">dotfiles-repo</a> but I wouldn't consider it
+            a very interesting read.
+            </p>
+
+            <h4><a href="https://ffmpeg.org/"><b>FFmpeg</b></a></h4>
+            <p>
+            FFmpeg must be one of my most dearly beloved software projects.
+            I use it for everything from recording screencasts and video editing to converting stuff to
+            <span title="High Efficiency Video Codec">HEVC</span>. I feel like many people don't realize the sheer power of FFmpeg
+            But if you haven't tried it out I highly recommend.
+            </p>
+
+            <h4><a href="https://mpv.io"><b>MPV</b></a></h4>
+            <p>
+            MPV funtions as my media player. MPV is a really good for everything as it
+            is able to read almost every protocol from <code>ytdl://</code> to <code>sftp://</code>. The MPV also provides
+            with powerful controlls and configuration options and reacts to scaling very well which means it work great with
+            tiling window managers like DWM.
+            </p>
+
+            <h4><a href="https://newsboat.org/"><b>Newsboat</b></a></h4>
+            <p>
+            Newsboat functions as my rss-reader. I'm also subscribed to
+            some youtube-channels and their feeds are also included in my Newsboat. I have a scripts in my
+            <a href="https://github.com/lajp/dotfiles">dotfiles-repo</a> called <code>newsboat-open.sh</code> that essentially
+            just opens all the youtube-links in mpv and other stuff in the browser (as it is quite uncommon for websites
+            to include the entire article in the rss-feed).
+            </p>
 		</div>
 	</body>
 </html>
