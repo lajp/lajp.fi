@@ -11,7 +11,7 @@
 }
 .article {
     background: white;
-    font-size: 1vw;
+    font-size: medium;
     text-align: left;
     flex-flow: row wrap;
     inline-size: 50%;
