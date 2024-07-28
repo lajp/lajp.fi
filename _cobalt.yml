@@ -1,0 +1,14 @@
+
+site:
+  title: lajp.fi
+  description: Personal website of Luukas Pörtfors
+  base_url: https://lajp.fi
+posts:
+  default:
+    description: a brief description
+  rss: rss.xml
+  publish_date_in_filename: false
+  dir: blog
+syntax_highlight:
+  theme: "base16-eighties.dark"
+  enabled: true
