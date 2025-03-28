@@ -1,0 +1,62 @@
+.article {
+    font-family: Liberation Mono, Menlo, Consolas, Monaco, Lucida Console, monospace;
+    font-size: medium;
+    text-align: left;
+    flex-flow: row wrap;
+    inline-size: 50%;
+    overflow: wrap;
+    float: left;
+    position: relative;
+}
+.definition {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.masonry-bricks-container {
+    padding: .4em 0;
+    column-gap: .5rem;
+    margin-bottom: 3rem;
+    column-count: 4;
+}
+.masonry-bricks-container img,
+.masonry-bricks-container div {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    break-inside: avoid;
+    margin-bottom: .4rem;
+}
+a {
+    color: #ea6962;
+}
+h1 {
+    color: #7daea3;
+}
+h2 {
+    color: #89b482;
+}
+h3 {
+    color: #d8a657;
+}
+h4 {
+    color: #d3869b;
+}
+footer {
+    width: 100%;
+}
+body {
+    background: #1c1c1c;
+    color: #d4be98;
+}
+@media only screen and (max-width: 960px) {
+    .article {
+        inline-size: 100%;
+    }
+}
