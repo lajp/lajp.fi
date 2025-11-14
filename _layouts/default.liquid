@@ -19,6 +19,9 @@
             <div class="article">
                 <p><a href="/">Home</a> <a href="/blog">Blog</a></p>
                 <hr>
+                {% if page.published_date %}
+                  <p><em>Published on: {{ page.published_date | date: "%B %d, %Y" }}</em></p>
+                {% endif %}
                 {{ page.content }}
             </div>
             <div>
