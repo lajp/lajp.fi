@@ -55,6 +55,17 @@ body {
     background: #1c1c1c;
     color: #d4be98;
 }
+pre[class*="language-"] {
+    border: 1px solid #3c3836;
+    border-radius: 6px;
+}
+code:not([class*="language-"]) {
+    background: #32302f;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: Liberation Mono, Menlo, Consolas, Monaco, Lucida Console, monospace;
+    font-size: 0.9em;
+}
 @media only screen and (max-width: 960px) {
     .article {
         inline-size: 100%;

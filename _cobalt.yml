@@ -10,5 +10,4 @@ posts:
   publish_date_in_filename: false
   dir: blog
 syntax_highlight:
-  theme: "base16-eighties.dark"
-  enabled: true
+  enabled: false

@@ -1,5 +1,6 @@
 ---
 title: NixOS port allocation
+description: An automatic port allocation system for NixOS that prevents collisions
 published_date: 2026-01-31 16:17:13.717981319 +0000
 layout: default.liquid
 is_draft: false
@@ -10,7 +11,7 @@ I was recently implementing a new service to [my NixOS configuration](https://gi
 
 The conversation went something like this:
 ```
-me: implement service X to host Y
+me: implement service X on host Y
 claude: *produces plan where service X runs on 3000*
 me: port 3000 is surely already occupied, use another one
 claude: *updates the plan to use port 3004 instead*
